@@ -1,36 +1,29 @@
-// weekDay.js
+// dayOfWeek.js
 
-// Function to convert the number to the corresponding weekday
-function getWeekDay(number) {
-    switch (number) {
-        case 1:
-            console.log("Sunday");
-            break;
-        case 2:
-            console.log("Monday");
-            break;
-        case 3:
-            console.log("Tuesday");
-            break;
-        case 4:
-            console.log("Wednesday");
-            break;
-        case 5:
-            console.log("Thursday");
-            break;
-        case 6:
-            console.log("Friday");
-            break;
-        case 7:
-            console.log("Saturday");
-            break;
-        default:
-            console.log("Invalid input! Please enter a number between 1 and 7.");
+// Function to display the corresponding day of the week
+function displayDayOfWeek(dayNumber) {
+    if (dayNumber === 1) {
+        console.log("Sunday");
+    } else if (dayNumber === 2) {
+        console.log("Monday");
+    } else if (dayNumber === 3) {
+        console.log("Tuesday");
+    } else if (dayNumber === 4) {
+        console.log("Wednesday");
+    } else if (dayNumber === 5) {
+        console.log("Thursday");
+    } else if (dayNumber === 6) {
+        console.log("Friday");
+    } else if (dayNumber === 7) {
+        console.log("Saturday");
+    } else {
+        console.log("Invalid input! Please enter a number between 1 and 7.");
     }
 }
 
-// Read the number from the command line
-let number = parseInt(process.argv[2]);
+// Read the day number from the command line input
+let dayNumber = parseInt(process.argv[2]);
 
-// Call the function to get the corresponding weekday
-getWeekDay(number);
+// Call the function to display the corresponding day of the week
+displayDayOfWeek(dayNumber);
+
